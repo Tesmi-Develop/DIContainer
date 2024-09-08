@@ -1,5 +1,4 @@
 {
-	"typescript.tsdk": "node_modules/typescript/lib",
 	"files.eol": "\n",
 	"[typescript]": {
 		"editor.defaultFormatter": "dbaeumer.vscode-eslint",
@@ -10,5 +9,7 @@
 		"editor.formatOnSave": true
 	},
 	"eslint.run": "onType",
-	"eslint.format.enable": true
+	"eslint.format.enable": true,
+	"typescript.tsdk": "node_modules/typescript/lib",
+	"editor.codeActionsOnSave": ["source.organizeImports", "source.fixAll", "source.addMissingImports"]
 }

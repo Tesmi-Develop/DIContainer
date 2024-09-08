@@ -19,7 +19,7 @@
 
 		// configurable
 		"paths": {
-			"@rbxts/packageName": ["../../src"],
+			"@rbxts/di-container": ["../../src"],
 		},
 		"rootDirs": [
 			"src",
@@ -29,7 +29,14 @@
 		"outDir": "./out",
 		"incremental": true,
 		"tsBuildInfoFile": "./out/tsconfig.tsbuildinfo",
-		"declaration": true
+		"declaration": true,
+		"plugins": [
+			{
+				"transform": "rbxts-transformer-reflection",
+				"reflectAllCalls": true,
+				"autoRegister": true
+			}
+		]
 	},
 	"include": [
 		"./src/**/*",
